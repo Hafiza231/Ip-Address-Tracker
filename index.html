@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-location.svg">
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <form id="form">
+                <h1>IP Address Tracker</h1>
+            <div class="input-group">
+                <input type="search" id="searchInput" placeholder="Search for any IP address or domain">
+                <button type="submit" id="search-ip"><img src="./images/icon-arrow.svg" alt="arrow icon"> </button> 
+                <p class="error-message"></p>
+            </div>
+            </form> 
+            <div class="card">
+                <div class="data">
+                    <span class="title">IP ADDRESS</span>
+                    <span class="info" id="ip">54.221.173.185</span>
+                </div>
+                <div class="data">
+                    <span class="title">LOCATION</span>
+                    <span class="info" id="location">xxxxxxx</span>
+                </div>
+                <div class="data">
+                    <span class="title">TIMEZONE</span>
+                    <span class="info" id="time">xxxxxxx</span>
+                </div>
+                <div class="data">
+                    <span class="title">ISP</span>
+                    <span class="info" id="isp">xxxxxxx</span>
+                </div>
+            </div>
+        </header>
+        <section class="map-section">
+            <div class="map-container" id="mapItem">
+      
+            </div>
+        </section>
+    </div>   
+    <script src="app.js"></script>  
+</body>
+</html>
