@@ -38,22 +38,22 @@ let displayMap=(lng,lat)=>{
             displayMap(data.location.lng,data.location.lat);                
        }
         searchInput.value = ''
-    }) 
+    })
 }
    //Event Listeners
    searchInput.addEventListener('search',searchIP)
 
    function searchIP(e){
-       if(searchInput.value==''){
-           errorMessage.textContent='*error'
-       }
-       else{
-           errorMessage.textContent=''
-           findAddress()
-       }
-       e.preventDefault()
-   }
-   findAddress()
+    if(searchInput.value==''){
+        errorMessage.textContent='*error'
+    }
+    else{
+        errorMessage.textContent=''
+        findAddress()
+    }
+    e.preventDefault()
+}
+findAddress()
 
 
 
