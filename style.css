@@ -84,8 +84,28 @@ button{
     color:black;
     
 }
-
 .map-section .map-container{
     height:75vh;
     size: cover;
+}
+@media only screen and (max-width: 600px) {
+
+    header h1{
+        text-align: center;
+        font-size: 25px;
+    }
+    input{
+        width: 60%;
+    }
+    .card{
+        align-items: center;
+        flex-direction: column;
+        width: 80%;
+    }
+    .data{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 15px;
+    }
 }
